@@ -1,0 +1,31 @@
+body {
+   font-family: "NotoSansKR";
+   background-color: $grayColor;
+   overflow-x: hidden;
+   
+}
+
+.px-7 {
+   padding-right: 5rem;
+   padding-left: 5rem;
+}
+
+.me-9 {
+   margin-right: 13rem;
+   width: 100%;
+   max-width: 100%;
+}
+.sub-heading-color{
+   color: $mainColor;
+}
+
+.section-main-heading {
+   @extend %heading-section-style
+}
+
+.hr-line {
+   color: $grayColor;
+   margin-top: 10px;
+   margin-bottom: 10px;
+
+}

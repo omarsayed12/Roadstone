@@ -1,0 +1,136 @@
+.navbar-light {
+   position: fixed;
+   width: 100%;
+   z-index: 1;
+   font-weight: $light;
+   background-color: transparent;
+   .navbar-nav {
+      .show > .nav-link {
+         color: $grayColor;
+      }
+      .nav-link.active {
+        color: $grayColor;
+      }
+      .nav-link {
+         color: $grayColor;
+         font-size: $xSmallSize;
+         @include transisionElement(.4s color);
+         &:hover,
+         &:focus {
+           color: $mainColor;
+         }
+      }
+   }
+   .lang-link {
+      color: $grayColor;
+      font-size: $xSmallSize;
+      padding: 0 1px;
+      @extend %link-style;
+      &:hover,
+      &:active,
+      &:focus{
+         color: $mainColor;
+         @include transisionElement(.4s color)
+      }
+   }
+   .curved-line {
+      color: $grayColor
+   }
+   .dropdown-toggle{
+      &:after {
+         border: solid $grayColor;
+         @extend %arrow-icon;
+         @include transformElment(rotate(45deg));
+      }
+      &:hover::after {
+         border: solid $mainColor;
+         @extend %arrow-icon;
+         @include transformElment(rotate(45deg));
+      }
+      &:focus::after {
+         border: solid $mainColor;
+      }
+   }
+}
+
+.seeWordContainer {
+   position: relative;
+   height: 100vh;
+   &::before {
+      @extend %before;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+
+      background-color: rgb(0 0 0 / 50%);
+   }
+   .video-roadstone {
+      width: 100%;
+      height: 100vh;
+      object-fit: fill;
+   }
+   .seeWord {
+      padding-top: 25vh;
+      color: #FFF;
+      margin: auto;
+      position: absolute;
+      justify-content: space-evenly;
+      flex-direction: column;
+      text-align: center;
+      @extend %flex-element;
+      @include inset-position(0 0);
+
+      @media screen and (max-width: 374px ) {
+         padding-top: 17vh;
+      }
+
+      @media screen and (min-width: 576px ) and (max-width: 991.98px) {
+         padding-top:22vh
+      }
+      .seeWordHeading {
+         font-size: $largerSize;
+         line-height: 80px;
+
+         @media screen and (max-width: 424.98px ) {
+            font-size: 30px;
+            line-height: 40px;
+         }
+
+         @media screen and (min-width: 425px ) and (max-width:575.98px){
+            font-size: 40px;
+            line-height: 40px;
+         }
+
+         @media screen and (min-width: 576px ) and (max-width: 767.98px) {
+            font-size: 55px;
+            line-height: 55px;
+         }
+
+         @media screen and (min-width: 576px ) and (max-width: 991.98px) {
+            font-size: 70px;
+            line-height: 70px;
+         }
+      }
+      .seeWorldDes {
+         font: {
+            size: $xSmallSize;
+            weight: $light;
+            line-height: 20px;
+         }
+         color: $grayColor;
+         opacity: .9;
+         letter-spacing: .4px;
+
+         @media screen and (max-width: 425px ) {
+            font-size: $smallerSize;
+            display: inline;
+            // line-height: 40px;
+         }
+
+      }
+   }
+}
+
+
+
+

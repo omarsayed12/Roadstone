@@ -1,0 +1,41 @@
+//*Font Size
+$largerSize: 80px;
+$largSize: 40px;
+$meduiumSize: 20px;
+$smallSize: 17px;
+$xSmallSize: 14px;
+$smallerSize: 12px;
+
+//* Font Weight
+$light: 300;
+$normal: 500;
+$black: 900;
+
+//* Resbonsive Dimensions
+$maxMobileSmall: 374.9px;
+$minMobileMedium: 375px;
+$maxMobileMedium: 424.9px;
+$minMobileLarge: 425px;
+$maxMobileLarge: 767.9px;
+$minMaxTablet: 768px;
+$maxMaxTablet: 1023.9px;
+$minDesktop: 1024px;
+
+//* Colors
+$mainColor: #ED1C24;
+$blackColor: #000000;
+$grayColor: #F5F5F7;
+$whiteColor: #FFFFFF;
+
+
+
+.box {
+    font: {
+        size: 20px;
+        weight: bold;
+    }
+    margin: auto {
+        top: 10px;
+        bottom: 15px;
+    };
+}

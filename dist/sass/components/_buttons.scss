@@ -1,0 +1,97 @@
+.btn-more {
+   border: 2px solid $whiteColor;
+   color: $whiteColor;
+   @include transisionElement(.5s background);
+   @extend %link-style;
+   @extend %button-style ;
+
+   &:hover {
+      background-color: $mainColor;
+      color: $whiteColor;
+      border: 0;
+   }
+}
+
+.scroll {
+   position: relative;
+   min-height: 85px;
+   top: 7vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   @media screen and (max-width: 424.98px ) {
+      top:2vh
+   }
+   @media screen and (min-width: 425px ) and (max-width: 767.98px) {
+      top:3vh
+   }
+
+   @media screen and (min-width: 576px ) and (max-width: 991.98px) {
+      top: 2vh
+   }
+   .scroll-down {
+      @include transformElment(rotate(-90deg));
+      font-size: $smallerSize;
+      color: $whiteColor;
+      opacity: 0.4;
+      margin-bottom: 0;
+   }
+   .scroll-down-icon {
+      width: 21px;
+   }
+}
+
+.btn-more-retailer {
+   border: 2px solid #000000;
+   color:  #000000;
+   font-weight: $normal;
+   opacity: 100%;
+   &:hover,
+   &:focus {
+    color: $whiteColor;
+    background: $mainColor;
+    border: 0;
+   }
+}
+
+.read-more {
+   text-decoration: none;
+   line-height: 19px;
+   opacity: 1;
+   .moreTire {
+      color: $whiteColor;
+   }
+}
+
+.btn-submit {
+   width: 130px;
+   height: 40px;
+   color: $whiteColor;
+   background-color: $mainColor;
+   border-radius: 0;
+   text-transform: uppercase;
+   justify-content: space-around;
+   @extend %flex-element;
+   @extend %link-style;
+   &:hover,
+   &:focus {
+      color: $whiteColor;
+   }
+}
+
+.btn-back-up {
+   @media screen and (max-width: 991.98px ) {
+      text-align: center;
+      margin-top: 23px;
+   }
+   .back-up {
+      transform: rotate(179deg);
+   }
+   .back-to-up {
+      color: $whiteColor;
+      font-size: $smallerSize;
+      margin-left: 5px;
+      text-decoration: underline;
+      text-transform: capitalize;
+   }
+}

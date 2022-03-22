@@ -1,0 +1,106 @@
+.retailers {
+   position: relative;
+   height: 100vh;
+   @media screen and (max-width: 374px ) {
+      height: 115vh;
+   }
+   .retailers-heading {
+      color: #000000;
+   }
+   .retailersCity {
+      display: flex;
+      justify-content: center;
+      .city {
+         margin: 0 10px;
+         @include transisionElement(.5s background-image);
+      }
+      .same-dis {
+         margin-top: 45px;
+      }
+      .same-dis-ather {
+         margin-top: 70px;
+      }
+      .riyada {
+         background: url("../imgs/Riyada.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/riyadhover.png");
+         }
+     }
+      .jizan {
+         background: url("../imgs/jizan.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/jizanhover.png");
+         }
+      }
+      .gaddah {
+         background: url("../imgs/gaddah.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/gaddahhover.png");
+         }
+      }
+      .damam {
+         background: url("../imgs/damam.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/damamhover.png");
+         }
+       }
+      .khamis {
+         background: url("../imgs/khamis.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/khamishover.png");
+         }
+      }
+      .madina {
+         background: url("../imgs/madinad.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/madinahover.png");
+         }
+      }
+      .qassim {
+         background: url("../imgs/qassim.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/qassimhover.png");
+         }
+      }
+      .sakaka { background:
+          url("../imgs/sakaka.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/sakakahover.png");
+         }
+      }
+      .taif {
+         background: url("../imgs/taif.png");
+         @extend .retail-prop;
+         &:hover {
+            background: url("../imgs/taifhover.png");
+         }
+      }
+   }
+}
+.about {
+   .about-heading {
+      color: $mainColor;
+      @media screen and (max-width: 374px ) {
+         font-size: 30px;
+      }
+   }
+   .aboutDesc {
+      font-size: 16px;
+      text-align: center;
+      color: #000000;
+      letter-spacing: 0.2px;
+
+      @media screen and (max-width: 374px ) {
+         padding: 0 5px;
+         font-size: $xSmallSize;
+      }
+   }
+}

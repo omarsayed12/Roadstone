@@ -1,0 +1,40 @@
+.newLetterSignUP {
+    background-color: $blackColor;
+    padding: 40px 0 10px;
+    .newLetterSignUPContainer {
+        .newLetterSignUPHeading {
+            font-size: 22px;
+            color: $whiteColor;
+            font-weight: $black;
+            letter-spacing: 0.5px;
+
+            @media screen and (max-width: 991px ) {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+        .me-9 {
+            @media screen and (max-width: 1399.98px ) {
+                margin-right: 0;
+                margin: auto;
+            }
+        }
+
+        .input-name,
+        .input-email {
+            background-color: $blackColor;
+            color: $whiteColor;
+            border: 1px solid $grayColor;
+            border-radius: 0;
+            padding: 6px;
+        }
+
+        .wrong-text {
+            color: $mainColor;
+            font-size: $smallerSize;
+            font-weight: $normal;
+            visibility: hidden;
+        }
+
+    }
+}
